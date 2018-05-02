@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	<item
+		android:id="@+id/mnAdicionarCompromisso"
+		android:icon="@android:drawable/ic_menu_add"
+		android:title="Adicionar Compromisso"
+		app:showAsAction="ifRoom" />
+
+	<item
+		android:id="@+id/mnMeusCompromissos"
+		android:icon="@android:drawable/ic_menu_my_calendar"
+		android:title="Meus Compromissos"
+		app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name">CodeLab_Android_Ocean_A11</string>
+	<string name="default_notification_channel_id">CodeLabA11</string>
+</resources>

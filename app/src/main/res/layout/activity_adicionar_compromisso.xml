@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="br.com.paulosalvatore.codelab_android_ocean_a11.AdicionarCompromissoActivity">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:ignore="UselessParent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<EditText
+				android:id="@+id/etTitulo"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:drawableLeft="@drawable/ic_calendar"
+				android:drawablePadding="2dp"
+				android:drawableStart="@drawable/ic_calendar"
+				android:hint="Digite título, lugares, pessoas..."
+				android:imeOptions="actionDone"
+				android:textSize="20dp" />
+
+			<View
+				android:layout_width="fill_parent"
+				android:layout_height="1dp"
+				android:layout_marginBottom="5dp"
+				android:background="#b1b1b1" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:weightSum="10">
+
+				<TextView
+					android:id="@+id/tvData"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="7"
+					android:drawableLeft="@drawable/ic_clock"
+					android:drawablePadding="5dp"
+					android:drawableStart="@drawable/ic_clock"
+					android:padding="5dp"
+					android:text="ter, 1 de mai de 2018"
+					android:textSize="20dp" />
+
+				<TextView
+					android:id="@+id/tvHora"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="3"
+					android:text="11:00"
+					android:textSize="20dp" />
+			</LinearLayout>
+
+			<View
+				android:layout_width="fill_parent"
+				android:layout_height="1dp"
+				android:layout_marginTop="2dp"
+				android:background="#b1b1b1" />
+
+			<EditText
+				android:id="@+id/etLocalizacao"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:drawableLeft="@drawable/ic_localizacao"
+				android:drawablePadding="5dp"
+				android:drawableStart="@drawable/ic_localizacao"
+				android:ellipsize="end"
+				android:hint="Adicionar Local - CEP, Endereço, etc..."
+				android:imeOptions="actionDone"
+				android:inputType="text"
+				android:maxLines="1"
+				android:scrollHorizontally="true"
+				android:textSize="20sp" />
+
+			<Button
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:onClick="pesquisarLocalizacao"
+				android:text="Pesquisar Local" />
+
+			<ImageView
+				android:id="@+id/ivMapa"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:adjustViewBounds="true"
+				android:contentDescription="Mapa de Localização do Compromisso"
+				android:scaleType="fitCenter" />
+
+			<Button
+				android:id="@+id/btInserirCompromisso"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:onClick="inserirCompromisso"
+				android:text="Inserir Compromisso"
+				android:visibility="invisible" />
+
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>
